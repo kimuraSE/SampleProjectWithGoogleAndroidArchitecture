@@ -2,7 +2,7 @@ package com.sample.demo1.ui.dogimage
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sample.demo1.domain.dogimage.DogImageRepository
+import com.sample.demo1.data.dogimage.DogImageRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

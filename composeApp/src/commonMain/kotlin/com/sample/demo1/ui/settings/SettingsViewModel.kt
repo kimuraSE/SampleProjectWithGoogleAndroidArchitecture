@@ -2,8 +2,8 @@ package com.sample.demo1.ui.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sample.demo1.domain.settings.ThemeMode
-import com.sample.demo1.domain.settings.ThemeRepository
+import com.sample.demo1.data.settings.ThemeMode
+import com.sample.demo1.data.settings.ThemeRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map

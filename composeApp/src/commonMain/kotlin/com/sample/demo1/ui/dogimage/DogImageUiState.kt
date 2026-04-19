@@ -1,6 +1,6 @@
 package com.sample.demo1.ui.dogimage
 
-import com.sample.demo1.domain.dogimage.DogImage
+import com.sample.demo1.data.dogimage.DogImage
 
 /**
  * DogImage 画面の UI State。

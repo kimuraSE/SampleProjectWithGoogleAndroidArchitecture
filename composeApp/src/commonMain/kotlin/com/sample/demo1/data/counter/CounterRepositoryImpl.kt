@@ -3,8 +3,6 @@ package com.sample.demo1.data.counter
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToOneOrDefault
 import com.sample.demo1.db.Database
-import com.sample.demo1.domain.counter.Counter
-import com.sample.demo1.domain.counter.CounterRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

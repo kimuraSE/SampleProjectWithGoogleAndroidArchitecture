@@ -1,11 +1,11 @@
-package com.sample.demo1.domain.dogimage
+package com.sample.demo1.data.dogimage
 
 import kotlinx.coroutines.flow.Flow
 
 /**
  * 犬の画像の Single Source of Truth。
  *
- * GAA §0.1「永続モデル推奨」に従い、最後に取得した画像を KVault に永続キャッシュする。
+ * 最後に取得した画像を KVault に永続キャッシュする。
  * [observe] が返す Flow が UI に流れる真の所有者。
  *
  * ネットワーク取得は [fetchRandom] で行い、成功時は内部でキャッシュを更新するため

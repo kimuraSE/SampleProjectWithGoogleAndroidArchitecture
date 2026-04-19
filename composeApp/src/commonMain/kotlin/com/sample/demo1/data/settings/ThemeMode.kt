@@ -1,7 +1,7 @@
-package com.sample.demo1.domain.settings
+package com.sample.demo1.data.settings
 
 /**
- * アプリ全体のテーマ指定を表すドメインモデル。
+ * アプリ全体のテーマ指定を表すデータモデル。
  *
  * - [LIGHT]  : 常にライトテーマ
  * - [DARK]   : 常にダークテーマ

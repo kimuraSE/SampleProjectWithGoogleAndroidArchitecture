@@ -25,7 +25,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
-import com.sample.demo1.domain.dogimage.DogImage
+import com.sample.demo1.data.dogimage.DogImage
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

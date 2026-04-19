@@ -2,7 +2,7 @@ package com.sample.demo1.ui.counter
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sample.demo1.domain.counter.CounterRepository
+import com.sample.demo1.data.counter.CounterRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map

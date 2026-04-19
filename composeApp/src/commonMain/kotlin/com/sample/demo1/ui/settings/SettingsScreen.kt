@@ -21,7 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.sample.demo1.domain.settings.ThemeMode
+import com.sample.demo1.data.settings.ThemeMode
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

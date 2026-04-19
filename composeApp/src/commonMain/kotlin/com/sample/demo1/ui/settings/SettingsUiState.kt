@@ -1,6 +1,6 @@
 package com.sample.demo1.ui.settings
 
-import com.sample.demo1.domain.settings.ThemeMode
+import com.sample.demo1.data.settings.ThemeMode
 
 /**
  * Settings 画面の UI State。

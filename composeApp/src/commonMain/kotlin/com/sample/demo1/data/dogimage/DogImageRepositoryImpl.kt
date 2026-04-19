@@ -1,8 +1,6 @@
 package com.sample.demo1.data.dogimage
 
 import com.liftric.kvault.KVault
-import com.sample.demo1.domain.dogimage.DogImage
-import com.sample.demo1.domain.dogimage.DogImageRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

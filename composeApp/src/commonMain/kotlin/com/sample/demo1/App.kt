@@ -14,8 +14,8 @@ import coil3.network.ktor3.KtorNetworkFetcherFactory
 import com.sample.demo1.core.di.appModule
 import com.sample.demo1.core.di.rememberPlatformModule
 import com.sample.demo1.core.navigation.AppNavHost
-import com.sample.demo1.domain.settings.ThemeMode
-import com.sample.demo1.domain.settings.ThemeRepository
+import com.sample.demo1.data.settings.ThemeMode
+import com.sample.demo1.data.settings.ThemeRepository
 import org.koin.compose.KoinApplication
 import org.koin.compose.koinInject
 

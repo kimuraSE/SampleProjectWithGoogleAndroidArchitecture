@@ -1,8 +1,6 @@
 package com.sample.demo1.data.settings
 
 import com.liftric.kvault.KVault
-import com.sample.demo1.domain.settings.ThemeMode
-import com.sample.demo1.domain.settings.ThemeRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

@@ -1,4 +1,4 @@
-package com.sample.demo1.domain.settings
+package com.sample.demo1.data.settings
 
 import kotlinx.coroutines.flow.Flow
 

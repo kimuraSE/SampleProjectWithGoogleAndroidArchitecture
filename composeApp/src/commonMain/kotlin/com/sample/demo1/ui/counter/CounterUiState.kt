@@ -1,6 +1,6 @@
 package com.sample.demo1.ui.counter
 
-import com.sample.demo1.domain.counter.Counter
+import com.sample.demo1.data.counter.Counter
 
 /**
  * Counter 画面の UI State。

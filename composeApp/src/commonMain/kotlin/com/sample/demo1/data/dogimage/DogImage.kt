@@ -1,7 +1,7 @@
-package com.sample.demo1.domain.dogimage
+package com.sample.demo1.data.dogimage
 
 /**
- * ランダム画像画面で扱う犬の画像を表すドメインモデル。
+ * ランダム画像画面で扱う犬の画像を表すデータモデル。
  *
  * ドメインルール：url は空文字であってはならない。
  */

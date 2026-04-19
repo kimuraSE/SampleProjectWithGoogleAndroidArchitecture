@@ -1,14 +1,11 @@
-package com.sample.demo1.domain.counter
+package com.sample.demo1.data.counter
 
 /**
- * カウンターのドメインモデル。
+ * カウンターのデータモデル。
  *
  * ドメインルール：**value は 0 以上でなければならない**。
  * この不変条件を `init` ブロックで強制し、違反時は
  * [CounterValueOutOfRangeException] をスローする。
- *
- * ドメイン層は例外をそのまま投げ、呼び出し側（Repository / UseCase 層）で
- * `runCatching` 等により [Result] に変換する責務分担とする。
  */
 data class Counter(val value: Int) {
 
