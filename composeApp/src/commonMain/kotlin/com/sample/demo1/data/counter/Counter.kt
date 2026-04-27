@@ -1,11 +1,13 @@
 package com.sample.demo1.data.counter
 
 /**
- * カウンターのデータモデル。
+ * データモデル：アプリ内で重要な役割を持つデータを抽象化したもの。設計図とかしたもの
+ * ポイントは3つ。
+ *   ▎ 1つ目、data class + val で不変。 一度作ったら書き換えられない。
+ *   ▎ 2つ目、init で『値は 0 以上』というドメインルールを守っている。 ViewModel じゃなくモデル自身が守る。だからどこから作られても安全。
+ *   ▎ 3つ目、incremented のように過去分詞で命名し、新しいインスタンスを返す。
+ *   ▎ ZERO はリセット用の定数。
  *
- * ドメインルール：**value は 0 以上でなければならない**。
- * この不変条件を `init` ブロックで強制し、違反時は
- * [CounterValueOutOfRangeException] をスローする。
  */
 data class Counter(val value: Int) {
 

@@ -8,6 +8,15 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 
+/**
+ * Repositoryの具象クラス
+ * インターフェイスに記載のあった詳細な処理を実装する。
+ * DB操作を実際に行うデータソース層への橋渡し。
+ *
+ *
+ */
+
+
 class CounterRepositoryImpl(database: Database) : CounterRepository {
 
     private val queries = database.counterQueries

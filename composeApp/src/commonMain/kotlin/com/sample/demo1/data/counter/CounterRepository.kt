@@ -3,13 +3,11 @@ package com.sample.demo1.data.counter
 import kotlinx.coroutines.flow.Flow
 
 /**
- * カウンターの Single Source of Truth。
- *
- * UI / ViewModel はこの Repository の Flow から [Counter] を読み取るのみ。
- * 値の所有はこの Repository が担う。
- *
- * 更新系メソッドは [Result] を返し、ドメインルール違反 ([CounterValueOutOfRangeException]) が
- * 起きてもアプリが落ちないようにしている。
+ * カウンターにかかわるDB操作を宣言している。約束事
+ * observe(): カウンターの値の最新を常に取得するためのメソッド
+ * increment(): カウンターの値に＋１した値をDBに保存するメソッド
+ * decrement(): 逆
+ * reset(): カウンターの値を０にして保存するメソッド。
  */
 interface CounterRepository {
     fun observe(): Flow<Counter>
