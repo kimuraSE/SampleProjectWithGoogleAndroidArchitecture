@@ -3,11 +3,15 @@ package com.sample.demo1.ui.counter
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sample.demo1.data.counter.CounterRepository
+import io.ktor.util.logging.Logger
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import kotlin.math.log
+import kotlin.time.Duration.Companion.seconds
 
 class CounterViewModel(
     private val repository: CounterRepository,
@@ -23,11 +27,18 @@ class CounterViewModel(
             )
 
     fun increment() {
+        // コルーチンスコープ：viewModelScope
+        // コルーチンビルダー：.launch
         viewModelScope.launch {
-            repository.increment().onFailure {
-                // ドメインルール違反などの失敗はここで捕捉しクラッシュを防ぐ
-            }
+            println("now incrementing...")
+            delay(2.seconds)
+            repository.increment().onFailure {}
         }
+        viewModelScope.launch {
+            println("Push +")
+        }
+        println("done")
+
     }
 
     fun decrement() {
